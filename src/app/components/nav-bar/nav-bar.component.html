@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+
+
+@if( acceso != 'true'){
+      <li class="nav-item">
+        <a class="nav-link" routerLink="login">LOGIN</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="registro">REGISTRO</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Visualizar">MEC</a>
+      </li>
+
+
+
+    }@else{
+      <li class="nav-item">
+        <a class="nav-link" routerLink="privado">PRIVADO</a>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" routerLink="gestion">GESTION </a>
+      </li>
+
+
+    }
+
+    </ul>
+  </div>
+
+</nav>

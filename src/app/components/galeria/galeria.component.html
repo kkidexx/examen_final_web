@@ -1,0 +1,13 @@
+<div class="row libros-container">
+  @for(item of ene; track item) {
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <p>{{item.autor}}</p>
+          <p>{{item.titulolibro}}</p>
+          <a class="btn btn-primary" [routerLink]="[item.id]">DETALLES</a>
+        </div>
+      </div>
+    </div>
+  }
+</div>

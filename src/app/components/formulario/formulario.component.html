@@ -1,0 +1,24 @@
+<div class="container">
+  <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+
+    <label>Ingrese id</label>
+    <input type="text" class="form-control" name="id" [(ngModel)]="id">
+
+    <label>Ingrese </label>
+    <input type="text" class="form-control"  name="autor"[(ngModel)]="autor">
+
+    <label>Ingrese </label>
+    <input type="text" class="form-control" name="titulolibro"[(ngModel)]="titulolibro">
+
+    <label >Ingrese </label>
+    <input type="text" class="form-control" name="aniopublicado"[(ngModel)]="aniopublicado">
+
+
+
+    <button class="btn btn-primary" type="submit">REGISTRAR</button>
+
+
+
+
+  </form>
+</div>
